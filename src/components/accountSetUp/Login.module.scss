@@ -1,0 +1,249 @@
+@import "../../components/color/color.module.scss";
+
+.signinContainer {
+	height: 100vh;
+	width: 100%;
+	background-color: $dark;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+	svg {
+		height: 43.42px;
+		width: 94px;
+	}
+}
+
+.signinDiv {
+	border: 1px solid transparent;
+	width: 543px;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 2rem 4rem 2rem 4rem;
+	background: #ffffff;
+	box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+	border-radius: 20px;
+}
+
+.signinHeader {
+	text-align: center;
+}
+
+.headerH {
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.emailIcon {
+
+	width: 123px;
+	height: 123px;
+	border-radius: 100%;
+	background: rgba(39, 174, 96, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerEmail {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+
+	color: #406A99;
+}
+
+.headerP {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	text-align: center;
+
+	color: #333333;
+}
+
+.desc {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	overflow: hidden;
+	width: 75%;
+	color: #8b8b8b;
+	// line-break: auto;
+}
+
+.title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #414141;
+}
+
+.formTitle {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: #414141;
+}
+
+.header {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 35px;
+	color: #333333;
+	margin-bottom: 1.5rem;
+}
+
+.mt1 {
+	margin-top: 1rem;
+}
+
+.mt2 {
+	margin-top: 2rem;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 38px;
+
+
+}
+
+.subP {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+
+
+}
+
+.formSub {
+	margin-top: 2rem;
+	font-size: 0.9rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+}
+
+.signinAnchor {
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+	color: #27AE60;
+	margin-top: 30px;
+	font-size: 14px;
+
+
+}
+
+.emailVerificationDiv {
+	margin: 3rem auto;
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+	.signinDiv {
+		padding: 3rem;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.signinDiv {
+		padding: 2rem;
+		width: 80%;
+	}
+}
+
+.newpassword {
+	height: 100vh;
+	width: 100%;
+	background-color: $dark;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+
+	.logo {
+
+		margin-bottom: 50.53px;
+		margin-top: 40px;
+
+		svg {
+			height: 43.42px;
+			width: 94px;
+		}
+	}
+
+	.newPasswordDiv {
+		width: 444px;
+		height: 420px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+		border-radius: 20px;
+		padding: 40px 50px;
+
+		.headers {
+			font-family: 'Avenir' !important;
+			font-style: normal;
+			font-weight: 900 !important;
+			font-size: 18px;
+			line-height: 25px;
+			text-align: center;
+			color: #000000;
+		}
+
+		.headerText {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: 400;
+			width: 252px;
+			margin: 0px auto;
+			font-size: 14px;
+			line-height: 19px;
+			margin-top: 14px;
+			text-align: center;
+			color: #6F6F6F;
+		}
+
+		.formlabel {
+
+			padding: 0 !important;
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 19px;
+
+			color: #333333;
+
+
+
+		}
+	}
+}

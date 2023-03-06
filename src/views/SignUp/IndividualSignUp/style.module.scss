@@ -1,0 +1,172 @@
+@import "../../../components/color/color.module.scss";
+
+.signupContainer {
+	min-height: 100vh;
+	width: 100%;
+	background: $dark;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+	margin-bottom: 52.6px;
+	margin-top: 40px;
+}
+
+.signupDiv {
+	border: 1px solid transparent;
+	width: 845px;
+	height: 609px;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: $light;
+	// padding: 3rem 4rem 2rem 4rem;
+	padding-top: 50px;
+	padding-inline: 50px;
+	box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+	border-radius: 20px;
+}
+
+.signupDiv_flex {
+	display: flex;
+}
+
+.signupList {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+
+
+
+}
+
+.textBox {
+	margin-left: 24px;
+}
+
+.iconchecked {
+	// border: 2px solid red;
+	// margin-top: 6px;
+	padding: 0;
+	width: 20px;
+
+}
+
+.desc {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	overflow: hidden;
+	width: 75%;
+	color: #8B8B8B;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	// line-break: auto;
+
+
+}
+
+
+
+.title {
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #414141;
+	font-weight: 400;
+	margin: 5px 0;
+}
+
+.formTitle {
+	font-style: normal;
+	font-weight: 400;
+	color: #333333;
+	font-size: 14px;
+	margin-top: 5px;
+	line-height: 19px;
+
+
+}
+
+.header {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 41px;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 44px;
+	// border: 2px solid red;
+
+
+}
+
+.formBox {
+	margin-top: -10px;
+}
+
+.mt1 {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+label {
+	margin-top: 5px;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #333333;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 34px;
+	color: #27AE60;
+	margin-bottom: 34px;
+
+}
+
+.subP {
+	color: #8b8b8b;
+}
+
+.formSub {
+	font-size: smaller;
+	margin-top: 1rem;
+}
+
+@media only screen and (max-width: 775px) {
+	.signupDiv_flex {
+		flex-direction: column;
+	}
+
+	.sub {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.signupDiv {
+		padding: 2rem;
+		height: auto;
+	}
+
+	.signupContainer {
+		height: auto;
+	}
+}

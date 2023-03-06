@@ -1,0 +1,268 @@
+@import "../../components/color/color.module.scss";
+
+.menuTitle {
+  font-family: 'Avenir SemiBold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #C7C7C7;
+  text-transform: uppercase;
+
+}
+
+.container {
+  // height: 100%;
+  // border: 2px solid blue;
+
+  &>.userInfo {
+    padding-inline: 21px;
+    width: 201px;
+    height: 80px;
+    margin-inline: auto;
+    background: $main_dark;
+    border: 0.6px solid #8cabbe;
+
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &>div {
+      p {
+        color: $light_text;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .userProfile__text {
+    width: 140px;
+
+    .userProfile__userName {
+      display: flex;
+
+
+    }
+
+    // gap: 5px;
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 10px;
+      color: lighten($light_text, 2);
+    }
+
+    p {
+      display: flex;
+
+      align-items: center;
+    }
+
+    svg {
+
+
+      margin-left: 19px;
+    }
+  }
+
+  .user__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+nav {
+  width: 100%;
+  // border: 2px solid red;
+  // margin-top: 1rem;
+
+  li {
+    list-style: none;
+    font-weight: 100 !important;
+    width: 100% !important;
+    font-size: 16px;
+    line-height: 45px;
+    font-family: "Avenir";
+    gap: 20px;
+    color: $light;
+    cursor: pointer;
+    // gap: 20px;
+    display: flex;
+    padding-inline: 20px;
+
+
+    &:hover,
+    &.active {
+      background: rgba(39, 174, 96, 0.06);
+      color: $secondary;
+      width: 100%;
+      position: relative;
+      // border-left: 3px solid #27AE60;
+      // border-top-left-radius: 6px;
+      // border-bottom-left-radius: 6px;
+
+      path {
+        stroke: $secondary;
+      }
+    }
+  }
+}
+
+svg {
+  margin-right: 25px;
+
+  path {
+    stroke: #fff;
+  }
+}
+
+.replaced_not {
+  display: none;
+}
+
+.replaced_yen {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+// header
+.header__box {
+  // height: 100%;
+  background-color: $body;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+
+  svg {
+    margin: 0;
+  }
+}
+
+.left__container {
+  height: 4.7rem;
+  // border: 2px solid red;
+
+}
+
+input {
+  width: 433px;
+  height: 35px;
+
+  background: #fbfbfb;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  // border: 2px solid blue;
+}
+
+.toggleButton {
+
+  border-radius: 17.5px;
+  // width: 200px;
+  // height: 35px;
+  // gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-inline: 3px;
+  margin-right: 3rem;
+}
+
+.usersProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  // border: 2px solid red;
+  margin-left: 2rem;
+
+  .userProfileImg__container {
+    display: flex;
+
+    width: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .userProfileImg {
+    svg {
+      width: 30.8px;
+      height: 30.8px;
+    }
+  }
+
+  .arrowDown {
+    margin-right: -8rem !important;
+    // border: 2px solid red;
+  }
+}
+
+.input__box {
+  display: flex;
+  position: relative;
+
+  input {
+    padding-left: 55px;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+  }
+}
+
+.left__container {
+  height: 4.7rem;
+}
+
+input {
+  width: 433px;
+  height: 35px;
+}
+
+.backBtn {
+  margin-top: 43px;
+  padding: 10px 20px;
+
+  button {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9ea2b2;
+  }
+}
+
+.title {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+
+  color: #041926;
+}

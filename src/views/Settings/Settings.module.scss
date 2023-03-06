@@ -1,0 +1,777 @@
+.container {
+	width: 100%;
+	height: auto;
+	// padding: 34px 40px;
+	margin-top: 32px;
+	border: 2px solid transparent;
+
+	&>div.formHeader:not(:first-child) {
+		margin-top: 66px;
+	}
+
+	&>button {
+		margin-top: 50px !important;
+	}
+
+	&>.note {
+		margin-top: 7px;
+		width: 569px;
+		height: auto;
+
+		&>p {
+			font-family: 'Avenir';
+			font-style: italic;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+
+			color: #828282;
+		}
+	}
+
+	& .divider {
+		margin: 50px 0;
+	}
+
+	.wrapper {
+		margin-top: 40px;
+	}
+}
+
+.formHeader {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&>div {
+		&>h2 {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 23px;
+			color: #333333;
+		}
+
+		&>p {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			color: #828282;
+			margin-top: 5px;
+		}
+	}
+}
+
+.formField {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	grid-auto-flow: row;
+	column-gap: 40px;
+	margin: 24px 0;
+
+	&>.quarterField {
+		width: 400px;
+		// margin-top: -5px !important;
+		max-width: 400px;
+		// border: 2px solid red;
+	}
+
+	&>div {
+		&>label {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			color: #333333;
+			display: block;
+			margin-bottom: 0px !important;
+
+		}
+
+		&>div {
+			margin-top: 8px;
+
+			&>input {
+				width: 100%;
+				height: 44px;
+				background: #ffffff;
+				border: 1px solid #dddddd;
+				border-radius: 4px;
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+.tableWrapper {
+	margin-top: 40px;
+}
+
+.checkboxField {
+	margin-top: 34px;
+	display: flex;
+	flex-direction: column;
+
+	&>div {
+		margin-bottom: 15px;
+
+		&>label {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px !important;
+			line-height: 16px;
+			color: #4f4f4f !important;
+
+		}
+	}
+
+	&>.formField {
+		margin-top: -6px !important;
+		margin-left: 26px;
+	}
+}
+
+.checkboxGrid {
+	& .header {
+		&>h2 {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			color: #828282;
+		}
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& p {
+		font-family: Avenir;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		color: #828282;
+		margin-top: -6px;
+		margin-bottom: 26px;
+		margin-left: 26px;
+	}
+
+	&>div {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		column-gap: 60px;
+
+		&>div {
+			display: flex;
+			flex-direction: column;
+
+			&>div {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	& .formField {
+		margin-top: -6px !important;
+		margin-left: 26px;
+
+
+	}
+}
+
+.modalContainer {
+	position: relative;
+	z-index: 9999 !important;
+	max-width: 419px !important;
+	height: auto;
+	min-height: 400px;
+	max-height: 90vh;
+	overflow: auto;
+	background: #ffffff;
+	box-shadow: -4px 4px 14px rgba(224, 224, 224, 0.69);
+	border-radius: 20px !important;
+	display: flex;
+	flex-direction: column;
+	// border: 2px solid red;
+
+	&>div:nth-child(2) {
+		margin-top: 26px !important;
+	}
+
+	&>p {
+		padding: 0 40px;
+		margin-bottom: 24px;
+		font-family: Avenir;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		color: rgba(74, 82, 106, 0.990517);
+		display: flex;
+		align-items: center;
+
+		&>svg {
+			color: #27ae60;
+			margin-right: 5px;
+		}
+
+		&>span {
+			color: #414141;
+			font-weight: 500;
+			margin: 0 5px;
+		}
+	}
+
+	&>.modalFooter {
+		padding: 0 40px;
+		margin-bottom: 24px;
+
+		&>button {
+			width: 100%;
+			font-family: "Avenir";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			color: #ffffff;
+			background: #27ae60;
+			height: 44px;
+			transition: all 0.4s ease;
+
+			bor &:hover {
+				color: #ffffff;
+				background: #1e9751;
+			}
+
+			&:active {
+				color: #ffffff;
+				background: #1e9751;
+				transform: scale(0.9);
+			}
+		}
+	}
+
+	.btnGroup {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 24px;
+		margin-top: 80px;
+
+		&>button {
+			min-width: 100% !important;
+		}
+	}
+}
+
+.modalHeader {
+	display: flex;
+	width: 100%;
+	height: 75px;
+	padding: 0 40px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #e0e0e0;
+
+	&>h2 {
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		color: #828282;
+		flex: 1;
+	}
+}
+
+.apiWrapper {
+	margin-top: 40px;
+}
+
+.apiListContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 17px 0;
+
+	&>h3 {
+		margin: 0;
+		font-family: 'Avenir';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		color: #828282;
+	}
+
+	&>div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: auto;
+		min-width: 700px;
+		height: 50px;
+		background: #ffffff;
+		border: 1px dashed #dddddd;
+		box-sizing: border-box;
+		border-radius: 4px;
+		padding: 16px;
+		margin-top: 10px;
+
+		&>span {
+			font-family: Avenir;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			color: #4f4f4f;
+		}
+
+		&>svg {
+			cursor: pointer;
+		}
+	}
+}
+
+.inputWrapper {
+	padding: 0 40px;
+	margin-bottom: 26px;
+	display: flex;
+	flex-direction: column;
+
+	&>label {
+		font-family: "Avenir";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		color: #333333;
+		margin-bottom: 8px;
+	}
+
+	&>input,
+	select {
+		width: 100%;
+		height: 44px;
+		background: #ffffff;
+		border: 1px solid #dddddd;
+		box-sizing: border-box;
+		border-radius: 4px;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		color: #414141;
+		padding: 0 15px;
+	}
+}
+
+.inputDivider {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 0 40px;
+	margin-bottom: 24px;
+
+	&>h2 {
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		color: #333333;
+	}
+
+	&>a {
+		font-weight: normal;
+		font-size: 14px;
+	}
+}
+
+.modalList {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 40px;
+	margin: 18px 0;
+
+	&>h2 {
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		color: #333333;
+	}
+
+	&>p {
+		font-family: Avenir;
+		font-weight: normal;
+		font-size: 14px;
+		color: #828282;
+		line-height: 24px;
+		margin-top: 3px;
+
+		&.note {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+
+			color: #4F4F4F;
+		}
+	}
+}
+
+.inputDesc {
+	padding: 0 40px 26px 40px;
+	border-bottom: 1px solid #e0e0e0;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+.inputDesc>p {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px !important;
+	line-height: 16px;
+	color: #4f4f4f !important;
+	margin-bottom: 20px;
+}
+
+.inputDesc>p>span {
+	color: #333333;
+	font-weight: 600;
+	margin: 0 2px;
+}
+
+.checkmark {
+	padding: 0 40px;
+	margin-bottom: 24px;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #4f4f4f;
+}
+
+.account_wrap {
+	// margin: 20px 50px;
+	border: 2px solid red;
+}
+
+.account_h1 {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	/* identical to box height */
+
+	color: #828282;
+
+}
+
+.removeModal {
+	margin-top: 40px;
+	width: 100%;
+	border: 2px solid red;
+
+
+
+}
+
+.removeModal_p {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #333333;
+}
+
+.buttonModalwrap {
+	margin: 40px 20px;
+}
+
+.buttonModal {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.cancelModal {
+	width: 100px;
+	height: 40px;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	// line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	background: #333333;
+	border: 1.28183px solid #333333;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.removeModal {
+	width: 100px;
+	// height: 30.76px;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	// line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	background: #27ae60;
+	border: 1.28183px solid #27ae60;
+	border-radius: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.signupDiv {
+	display: flex;
+	border: 1px solid transparent;
+	// width: 800px;
+	height: auto;
+	// margin: 0 auto;
+	background-color: #fff;
+	padding: 2rem;
+	background: #ffffff;
+	// box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+	// border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+}
+
+.signUpContent {
+	width: 500px;
+	height: 40%;
+	padding: 0;
+}
+
+.signupList {
+	margin: 20px 0px 0px 20px;
+}
+
+.listType {
+	margin: 0px 40px 18px 40px;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.listType::-webkit-scrollbar {
+	display: none;
+}
+
+.listType {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	/* Firefox */
+}
+
+.listType_h2 {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.listType_wrap {
+	margin: 10px 0px;
+}
+
+.listType_h3 {
+	// font-family: 'Avenir';
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 26px;
+
+	letter-spacing: -0.2px;
+
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.listType_p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	/* or 171% */
+
+
+	color: #828282;
+}
+
+.permisions {
+	display: flex;
+	align-items: center;
+}
+
+.formTitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.mt1 {
+	margin-top: 1rem;
+}
+
+
+.downloadIcon {
+	margin-right: 10px !important;
+}
+
+.label {
+	padding: 0 !important;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #333333;
+
+
+}
+
+
+.modalDiv {
+
+	width: 550px;
+	border-radius: 20px;
+	overflow-y: auto;
+	// border: 1px solid orangered;
+	max-height: 98vh;
+}
+
+
+.user_wrap {
+	padding-inline: 48px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #E0E0E0;
+
+
+	h2 {
+		font-family: 'Avenir';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #828282;
+	}
+}
+
+.userDiv {
+	padding-inline: 50px;
+	margin-bottom: 0;
+
+
+	.userContent {
+		margin-top: 49px;
+
+	}
+}
+
+.label {
+	padding: 0 !important;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #333333;
+
+
+}
+
+.user {
+	margin-top: 40px;
+
+	h2 {
+		font-family: 'Avenir';
+		font-style: normal;
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 20px;
+		color: #333333;
+	}
+
+	a {
+		font-family: 'Avenir';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		text-decoration-line: underline;
+		color: #0243EC;
+	}
+
+	.user_content {
+		// border: 2px solid red;
+
+		h3 {
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 26px;
+			letter-spacing: -0.2px;
+
+			color: #333333;
+			display: block;
+			margin-bottom: 3px;
+		}
+
+		p {
+			// border: 2px solid blue;
+			font-family: 'Avenir';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			color: #828282;
+			margin-bottom: 22px;
+		}
+	}
+}

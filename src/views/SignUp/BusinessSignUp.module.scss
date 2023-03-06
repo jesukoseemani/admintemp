@@ -1,0 +1,186 @@
+@import "../../components/color/color.module.scss";
+
+.container {
+	// min-height: 100vh;
+	background-color: $dark;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 52.58px;
+	margin-top: 38px;
+}
+
+.signUpWrapper {
+	border: 1px solid transparent;
+	max-width: 950px;
+	width: 1179px;
+	height: 573px;
+	margin: 0 auto;
+	background-color: #fff;
+	// padding: 3rem 4rem 2rem 4rem;
+	padding-inline: 50px;
+	padding-top: 47px;
+	padding-bottom: 44px;
+	background: #ffffff;
+	box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+	border-radius: 20px;
+	overflow: auto;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.header {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 35px;
+	color: #333333;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 13px;
+}
+
+.details {
+	margin-left: -10px;
+}
+
+.content {
+	display: flex;
+	width: 50%;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.title {
+	font-family: 'Avenir';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0em;
+}
+
+.description {
+	font-family: 'Avenir';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0em;
+	color: rgba(139, 139, 139, 1);
+
+}
+
+.label {
+	font-family: 'Avenir' !important;
+	font-style: normal;
+	font-weight: 400 !important;
+	font-size: 14px !important;
+	line-height: 16px !important;
+
+	color: #333333 !important;
+
+
+
+}
+
+.emptyLabel {
+	margin-top: 2rem;
+}
+
+.terms {
+	margin-top: 1rem;
+	font-family: 'Avenir';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0em;
+	color: rgba(139, 139, 139, 1);
+}
+
+.signupList {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 21px;
+	// border: 2px solid red;
+}
+
+.iconchecked {
+	margin-top: 6px;
+	padding: 0;
+}
+
+.desc {
+	font-style: normal;
+	font-size: 14px;
+	width: 80%;
+	font-weight: 400;
+	line-height: 21px;
+	color: #8B8B8B;
+	font-family: 'Avenir';
+
+}
+
+.title {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #414141;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3px;
+}
+
+
+.mt1 {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+
+	p {
+		color: #27AE60;
+	}
+}
+
+.subP {
+	color: #8b8b8b;
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.stepLabel {
+	border: 2px solid red;
+}
+
+.stepDesc {}

@@ -1,0 +1,166 @@
+.signinContainer {
+	height: 100vh;
+	width: 100%;
+	background: #041926;
+	margin: 0 auto;
+	display: flex;
+	padding-top: 52px;
+	// justify-content: center;
+	// align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.signinDiv {
+	border: 1px solid transparent;
+	width: 444px;
+	height: 407px;
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 41px 50px;
+	background: #ffffff;
+	box-shadow: 0px 4px 14px rgba(15, 49, 32, 0.15);
+	border-radius: 20px;
+
+}
+
+.signinHeader {
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	font-family: 'Avenir Heavy';
+	font-weight: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #000000;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.desc {
+	font-style: normal;
+	font-size: 15px;
+	line-height: 16px;
+	overflow: hidden;
+	width: 75%;
+	color: #8b8b8b;
+	font-weight: 400 !important;
+	// line-break: auto;
+}
+
+.title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #414141;
+
+}
+
+.formTitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	// line-height: 19px;
+	// margin-top: 10px;
+	// margin-bottom: 5px !;
+
+	color: #333333;
+}
+
+.header {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 35px;
+	color: #333333;
+	margin-bottom: 1.5rem;
+}
+
+.mt1 {
+	margin-top: 0;
+}
+
+.mt2 {
+	margin-top: 2rem;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	margin: 30px 0px;
+}
+
+.subP {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.9rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #6f6f6f;
+}
+
+.formSub {
+	font-size: 0.9rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #000000;
+}
+
+.signinAnchor {
+	text-decoration: none;
+	color: Green 2;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 900;
+
+}
+
+
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+	.signinDiv {
+		padding: 3rem;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.signinDiv {
+		padding: 2rem;
+		width: 100%;
+	}
+
+	.signinContainer {
+		height: auto;
+	}
+}
+
+.formBody {
+	// border: 2px solid red;
+	// margin-top: 3rem;
+}
+
+label {
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+
+	color: #333333;
+}
